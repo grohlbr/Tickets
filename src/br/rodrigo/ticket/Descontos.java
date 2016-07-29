@@ -122,13 +122,14 @@ public class Descontos {
 			System.out.println("Possui carteirinha de estudante: ");
 			System.out.println("1 - SIM\n2 - NAO");
 			carteirinha = input.nextInt();
-			input.close();
+			
 		}
 		if(carteirinha == 1) {
 			descontoComCarteirinha(pessoa);
 		} else {
 			descontoSemCarteirinha(pessoa);
 		}
+		input.close();
 	}
 	
 	
